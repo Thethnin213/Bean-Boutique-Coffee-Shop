@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="homepage">
+    
+    <header>
+        <div class="container">
+            <div class="navigation">
+                <h1 class="title"><i class='bx bxs-coffee-bean'></i> <span>Bean Boutique</span> Coffee Shop</h1>
+    
+                <div class="search-box">
+                    <form action="submit">
+                        <input type="text" name="search" id="srch" placeholder="search">
+                        <button type="submit"><i class='bx bx-search-alt'></i></button>
+                    </form>
+                </div>
+    
+                <ul>
+                    <li><a href="special-offers.html">Special Offers</a></li>
+                    <li><a href="events-workshops.html">Events & Workshops</a></li>
+                    <li><a href="brewing-equipment.html">Brewing Equipment</a></li>
+                    <li><a href="coffee-selection.html">Coffee Selection</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+    
+                <div class="shoppingcart">
+                    <a href="shoppingcart.html">
+                        <i class='bx bx-cart'></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Added home section inside the container div -->
+            <div class="home">
+                <h1 class="title-1">Good <span>Coffee</span> will always<br> find the audience</h1>
+                <p>At Bean Boutique, each day starts with a cup of coffee with family, friends, and co-workers.<br> As great coffee should be experienced.</p>
+                <p id="price">From $15 to $200</p><br>
+            </div>
+        </div>
+    </header>
+    <div class="slideshow-wrapper">
+    <div class="slideshow-container">
+            <img src="images/R-(7).jpg" id="slide" width="635" height="400" alt="Pictures of our cafe">    
+        </div>
+        <div class="text-content">
+            <h2>About Our Café</h2>
+            <p>At Bean Boutique Coffee Shop, we believe that great coffee is more than just a drink—it’s an experience that brings people together. From the first warm sip to the last, every cup we serve is crafted with love, passion, and the finest beans. Our cozy space is a welcoming haven where friends, families, and strangers alike come to unwind, share stories, and create memories. Whether you’re here for a quiet moment or catching up with loved ones, we’re honored to be part of your day. Come in, relax, and enjoy the simple joy of a perfect cup of coffee, made just for you.
+
+                Welcome to our family, where every sip feels like home.</p>
+        </div>
+    </div>
+    
+       
+      
+    
+    
+   
+    <section class="home2">
+        <div class="heading">
+            <h2>Our popular products</h2>
+        </div>
+        
+        <div class="popular-p">
+            <div class="box">
+                <img src="images/cappuccino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/bean1.jpg" alt="Arabica">
+                <h3>Arabica</h3>
+                <div class="content">
+                    <span>$15</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/R-(6).jpg" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <div class="content">
+                    <span>$23</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            
+        </div>
+    </section><br><br><br>
+   
+
+    <section class="footer">
+    <div class="footer-content">
+     <h2>Bean Boutique Coffee Shop</h2>
+     <div class="social">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+     </div>
+    </div>
+    <div class="Support">
+        <h3>Support</h3>
+    <ul>
+       <li><a>Products</a></li>
+       <li><a>Help & Support</a></li>
+       <Li><a>Return Policy</a></Li>
+       <li><a>Terms of Use</a></li>
+    </ul>
+    </div>
+
+
+    <div class="footer-box">
+        <h3>Contact Us</h3>
+    <div class="Contact">
+        <ul>
+            <li><i class='bx bx-map'></i>250 New York City, USA 10001</li>
+            <li><i class='bx bxs-phone-call'></i>+1 333 688 632</li>
+            <li><i class='bx bxs-envelope' ></i>Beanboutique.com</li>
+        </ul>
+    </div>
+      
+    </div>
+
+</section>
+<div class=bottom-bar>
+    <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
+
+</div>
+<div class="popup">
+    <button id="close">&times;</button>
+<h2>WELOCME!</h2>
+<p>Get 10% off your first purchase and enjoy our coffee!<br>Come and Let's order!</p>
+<a class="okbutton" href="#">Get it!</a>
+</div>
+<script src="script.js"></script>
+
+<div class="slideshow-container">
+
+<script>
+    var i=0;
+    var images=[];
+    var time=3000;
+    images[0] ='images/R-(7).jpg';
+    images[1]='images/coffeeshop.webp';
+    images[2]='images/R (4).jpg';
+    function changeImg(){
+        document.getElementById('slide').src = images[i];
+        if (i<images.length - 1){
+            i++;
+        }else{
+            i=0;
+        }
+        setTimeout(changeImg,time);
+
+    }
+  window.onload=changeImg;
+ 
+  
+</script>
+</div>
+</body>
+
+</html>
